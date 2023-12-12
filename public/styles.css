@@ -595,6 +595,12 @@ video {
   border-color: rgba(229, 231, 235, var(--tw-border-opacity));
 }
 
+a {
+  --tw-text-opacity: 1;
+  color: rgba(16, 185, 129, var(--tw-text-opacity));
+  text-decoration: underline;
+}
+
 .container {
   width: 100%;
 }
@@ -627,6 +633,14 @@ video {
   .container {
     max-width: 1536px;
   }
+}
+
+.menu-button {
+  --tw-bg-opacity: 1;
+  background-color: rgba(99, 102, 241, var(--tw-bg-opacity));
+  padding: 0.75rem;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
 .sr-only {
@@ -31226,6 +31240,16 @@ video {
 .content-none {
   content: none;
 }
+
+/* These are directives that allow the use of the base, components, and utilities styles in CSS. This is why the pages are styled. */
+
+/* The base class  injects Tailwind's base styles and any base styles registered by plugins*/
+
+/* The component class injects Tailwind's component classes and any component classes registered by plugins*/
+
+/* The utilities class injects Tailwind's utility classes and any utility classes registered by plugins */
+
+/* a directive in tailwind that allows you to alter the contents of any particular class that you have in your project */
 
 @media (min-width: 640px) {
   .sm\:container {
