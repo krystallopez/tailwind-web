@@ -1,6 +1,6 @@
-/* @tailwind base;
+@tailwind base;
 @tailwind components;
-@tailwind utilities; */
+@tailwind utilities;
 
 /* These are directives that allow the use of the base, components, and utilities styles in CSS. This is why the pages are styled. */
 /* The base class  injects Tailwind's base styles and any base styles registered by plugins*/
@@ -8,24 +8,3 @@
 /* The utilities class injects Tailwind's utility classes and any utility classes registered by plugins */
 
 /* a layer is a directive in tailwind that allows you to alter the contents of any particular class that you have in your project */
-
-@layer components {
-  .menu-button {
-    @apply text-white bg-green-500 rounded;
-  }
-}
-@layer base {
-  h1 {
-    @apply text-2xl;
-  }
-
-  h2 {
-    @apply text-xl;
-  }
-}
-
-@layer utilities {
-  .text-green-500 {
-    color: blue;
-  }
-}
